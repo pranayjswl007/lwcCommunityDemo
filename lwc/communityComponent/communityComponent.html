@@ -1,0 +1,15 @@
+<template>
+  <h1>{meetingData}</h1>
+  <lightning-card title="Wire Function" icon-name="standard:contact">
+      <template if:true={record}>
+          <div class="slds-m-around_medium">
+            <h1>Inside record</h1>
+            {recordId}
+          </div>
+      </template>
+      <template if:true={error}>
+          <h1>Inside error</h1>
+          <div>{error}></div>
+      </template>
+  </lightning-card>
+</template>
